@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
+=======
+>>>>>>> b51471adc5a31de200eff5bb4595c68c52bfe0a2
 import { PipesComponent } from './pipes/pipes.component';
 import { DiretivasComponent } from './diretivas/diretivas.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -17,10 +20,13 @@ const routes: Route[] = [
   {
     path: 'pipes',
     component: PipesComponent
+<<<<<<< HEAD
   },
   {
     path: 'criacao-pipes',
     component: CriacaoPipesComponent
+=======
+>>>>>>> b51471adc5a31de200eff5bb4595c68c52bfe0a2
   }
 ];
 
