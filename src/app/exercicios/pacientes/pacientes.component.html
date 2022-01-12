@@ -1,0 +1,54 @@
+<section>
+  <h1>Lista de Pacientes</h1>
+  <hr />
+
+  <!-- Form -->
+  <form>
+    <div><h3>Adicionar Paciente</h3></div>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" [(ngModel)]="newAttribute.nome" name="nome" />
+
+    <label for="email">Email: </label>
+    <input
+      type="text"
+      id="email"
+      [(ngModel)]="newAttribute.email"
+      name="email"
+    />
+
+    <label for="genero">Gênero: </label>
+    <input
+      type="text"
+      id="genero"
+      [(ngModel)]="newAttribute.genero"
+      name="genero"
+    />
+
+    <label for="cpf">CPF: </label>
+    <input type="text" id="cpf" [(ngModel)]="newAttribute.cpf" name="cpf" />
+
+    <button id="addBtn" (click)="add()">Adicionar</button>
+  </form>
+
+  <!-- table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Gênero</th>
+        <th>CPF</th>
+        <th>Deletar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pct of listaPacientes" [attr.id]="pct.nome">
+        <td>{{ pct.nome }}</td>
+        <td>{{ pct.email }}</td>
+        <td>{{ pct.genero }}</td>
+        <td>{{ pct.cpf }}</td>
+        <td><button (click)="del(pct)">Deletar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>

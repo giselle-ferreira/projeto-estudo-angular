@@ -1,0 +1,49 @@
+form {
+  margin-top: 10px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(174, 120, 224);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+input {
+  height: 26px;
+}
+
+button:hover {
+  background-color: rgb(186, 147, 223);
+}
+
+#addBtn {
+  margin-top: 20px;
+}
+
+table {
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  justify-content: center;
+}
+
+thead {
+  background-color: rgb(174, 120, 224);
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
