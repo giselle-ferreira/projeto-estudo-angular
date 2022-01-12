@@ -1,3 +1,4 @@
+import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { DiretivasComponent } from './diretivas/diretivas.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -16,6 +17,10 @@ const routes: Route[] = [
   {
     path: 'pipes',
     component: PipesComponent
+  },
+  {
+    path: 'criacao-pipes',
+    component: CriacaoPipesComponent
   }
 ];
 
