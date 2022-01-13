@@ -1,12 +1,12 @@
-<<<<<<< HEAD
-import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
-=======
->>>>>>> b51471adc5a31de200eff5bb4595c68c52bfe0a2
-import { PipesComponent } from './pipes/pipes.component';
-import { DiretivasComponent } from './diretivas/diretivas.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
-import { NgModule } from '@angular/core';
+import { AppGithubComponent } from './app-github/app-github.component';
+import { AppSorteioComponent } from './app-sorteio/app-sorteio.component';
+import { NgModule, Component } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
+
+import { CriacaoPipesComponent } from './criacao-pipes/criacao-pipes.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DiretivasComponent } from './diretivas/diretivas.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const routes: Route[] = [
   {
@@ -15,19 +15,25 @@ const routes: Route[] = [
   },
   {
     path: 'diretivas',
-    component: DiretivasComponent
+    component: DiretivasComponent,
   },
   {
     path: 'pipes',
-    component: PipesComponent
-<<<<<<< HEAD
+    component: PipesComponent,
   },
   {
     path: 'criacao-pipes',
-    component: CriacaoPipesComponent
-=======
->>>>>>> b51471adc5a31de200eff5bb4595c68c52bfe0a2
-  }
+    component: CriacaoPipesComponent,
+  },
+  {
+    path: 'sorteios',
+    component: AppSorteioComponent,
+  },
+  {
+    path: 'github',
+    component: AppGithubComponent,
+  },
+
 ];
 
 @NgModule({

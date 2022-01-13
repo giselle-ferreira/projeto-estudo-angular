@@ -1,3 +1,4 @@
+<h3>Filter Pipe</h3>
 <input type="text" placeholder="Buscar linguagem" [(ngModel)]="query" />
 
 <!-- <p>{{ linguagens | filter: "C" }}</p> -->
@@ -7,6 +8,10 @@
 </ul>
 
 <hr />
-
+<h3>INC Pipe</h3>
 <h3 *ngFor="let num of numeros | inc">{{ num }}</h3>
 <button (click)="add()">Adicionar</button>
+
+<hr />
+<h3>OBFS Pipe</h3>
+<p>{{ "giselle.fs@gmail.com" | obfsEmail }}</p>
